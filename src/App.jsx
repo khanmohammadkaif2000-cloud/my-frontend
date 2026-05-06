@@ -26,7 +26,7 @@ function App() {
 
           let imageUrl = "";
           if (p.Image && p.Image.length > 0) {
-            imageUrl = "https://my-backend-pi1l.onrender.com/uploads/a_bug_is_becoming_a_meme_on_the_internet_e926fd7920.jpg";
+            imageUrl = "https://my-backend-pi1l.onrender.com/uploads/a_bug_is_becoming_a_meme_on_the_internet_ca3b9912b5.jpg";
           }
 
           return (
