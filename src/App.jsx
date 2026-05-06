@@ -26,7 +26,7 @@ function App() {
 
           let imageUrl = "";
           if (p.Image && p.Image.length > 0) {
-            imageUrl = "http://localhost:1337" + p.Image[0].url;
+            imageUrl = "https://my-backend-pi1l.onrender.com/uploads/a_bug_is_becoming_a_meme_on_the_internet_b710f83e91.jpg";
           }
 
           return (
