@@ -4,7 +4,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://my-backend-pi1l.onrender.com/api/products?populate=*")
+    fetch("http://localhost:1337/api/products?populate=*")
       .then((res) => res.json())
       .then((data) => setProducts(data.data));
   }, []);
@@ -26,7 +26,7 @@ function App() {
 
           let imageUrl = "";
           if (p.Image && p.Image.length > 0) {
-            imageUrl = "https://my-backend-pi1l.onrender.com/uploads/a_bug_is_becoming_a_meme_on_the_internet_b710f83e91.jpg";
+            imageUrl = "http://localhost:1337" + p.Image[0].url;
           }
 
           return (
