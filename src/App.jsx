@@ -4,7 +4,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://my-backend-pi1l.oender.com/api/products?populate=*")
+    fetch("http://my-backend-pi1l.onrender.com/api/products?populate=*")
       .then((res) => res.json())
       .then((data) => setProducts(data.data));
   }, []);
